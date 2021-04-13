@@ -52,6 +52,13 @@ TARGET_USES_HWC2 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_juice
+TARGET_RECOVERY_DEVICE_MODULES := libinit_juice
+
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_juice
+TARGET_RECOVERY_DEVICE_MODULES := libinit_juicemage.gz
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
