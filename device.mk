@@ -99,6 +99,15 @@ PRODUCT_PACKAGES += \
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge \
+    android.hardware.sensors@2.0-service.multihal
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
