@@ -96,3 +96,12 @@ void vendor_load_properties() {
         property_override("ro.product.model", "Redmi 9T");
         property_override("ro.product.device", "lemon");
     } else if (hwname == "citrus") {
+        property_override("ro.product.brand", "POCO");
+        property_override("ro.product.model", "POCO M3");
+        property_override("ro.product.device", "citrus");
+    } else if (hwname == "pomelo") {
+        property_override("ro.product.brand", "Redmi");
+        property_override("ro.product.model", "Redmi 9T");
+        property_override("ro.product.device", "pomelo");
+    }
+}
