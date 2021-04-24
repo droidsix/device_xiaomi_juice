@@ -73,6 +73,9 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_juice
 TARGET_RECOVERY_DEVICE_MODULES := libinit_juice
 
+# Power
+TARGET_USES_INTERACTION_BOOST := true
+
 # kernel
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
